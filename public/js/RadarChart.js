@@ -34,6 +34,8 @@ var RadarChart = {
 			.append("svg")
 			.attr("width", cfg.w+cfg.ExtraWidthX)
 			.attr("height", cfg.h+cfg.ExtraWidthY)
+      .attr("xmlns","http://www.w3.org/2000/svg")
+      .attr("xmlns:xlink", "http://www.w3.org/1999/xlink")
 			.append("g")
 			.attr("transform", "translate(" + cfg.TranslateX + "," + cfg.TranslateY + ")");
 
@@ -103,64 +105,74 @@ var RadarChart = {
 		.attr("y", function(d, i){return cfg.h/2*(1-Math.cos(i*cfg.radians/total))-20*Math.cos(i*cfg.radians/total);});
 
   axis.append("image")
-    .attr("xlink:href", "http://ken-ng.herokuapp.com/images/icons/ember.png")
     .attr("text-anchor", "middle")
     .attr("transform", "translate(-65,180)")
-    .attr("height", "20px");
+    .attr("height", "20px")
+    .attr("width", "53px")
+    .attr("xlink:href", "/images/icons/ember.png");
 
   axis.append("image")
     .attr("id","node")
     .attr("xlink:href", "images/icons/node.png")
     .attr("text-anchor", "middle")
     .attr("transform", "translate(-80,80)")
+    .attr("width", "71px")
     .attr("height", "20px");
 
   axis.append("image")
     .attr("xlink:href", "images/icons/js.png")
     .attr("text-anchor", "middle")
     .attr("transform", "translate(-45,-20)")
+    .attr("width", "45px")
     .attr("height", "45px");
 
   axis.append("image")
     .attr("xlink:href", "images/icons/html.png")
     .attr("text-anchor", "middle")
     .attr("transform", "translate(80,-36)")
+    .attr("width", "30px")
     .attr("height", "30px");
 
   axis.append("image")
     .attr("xlink:href", "images/icons/css.png")
     .attr("text-anchor", "middle")
     .attr("transform", "translate(169,-30)")
+    .attr("width", "25px")
     .attr("height", "25px");
 
   axis.append("image")
     .attr("xlink:href", "images/icons/ruby.png")
     .attr("text-anchor", "middle")
     .attr("transform", "translate(272,-15)")
+    // .attr("width", "100px")
     .attr("height", "30px");
 
   axis.append("image")
     .attr("xlink:href", "images/icons/postgres.png")
     .attr("text-anchor", "middle")
     .attr("transform", "translate(300,65)")
+    // .attr("width", "100px")
     .attr("height", "40px");
 
   axis.append("image")
     .attr("xlink:href", "images/icons/firebase.png")
     .attr("text-anchor", "middle")
     .attr("transform", "translate(290,170)")
+    // .attr("width", "100px")
     .attr("height", "40px");
 
   axis.append("image")
     .attr("xlink:href", "images/icons/python.png")
     .attr("text-anchor", "middle")
     .attr("transform", "translate(190,250)")
+    // .attr("width", "50px")
     .attr("height", "30px");
 
   axis.append("image")
     .attr("xlink:href", "images/icons/angular.png")
     .attr("text-anchor", "middle")
     .attr("transform", "translate(20,243)")
+    // .attr("width", "55px")
     .attr("height", "55px");
 
 
