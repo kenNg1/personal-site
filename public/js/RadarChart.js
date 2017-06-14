@@ -103,7 +103,7 @@ var RadarChart = {
 		.attr("y", function(d, i){return cfg.h/2*(1-Math.cos(i*cfg.radians/total))-20*Math.cos(i*cfg.radians/total);});
 
   axis.append("image")
-    .attr("xlink:href", "images/icons/ember.png")
+    .attr("xlink:href", "http://ken-ng.herokuapp.com/images/icons/ember.png")
     .attr("text-anchor", "middle")
     .attr("transform", "translate(-65,180)")
     .attr("height", "20px");
