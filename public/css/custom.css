@@ -5,7 +5,7 @@
 
 .col {
   flex: 1;
-  background-color: lightgreen;
+  background-color: rgb(209, 244, 210);
   margin: 0.2em;
   padding: 2rem 1rem;
 }
@@ -14,6 +14,7 @@ html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  overflow-x: hidden;
 }
 
 #chart-div {
@@ -48,6 +49,7 @@ html {
   z-index: 99;
 }
 
+/* SVG ONLY */
 @media all and (min-width: 360px) {
   #chart svg {
     transform: scale(0.8);
@@ -56,6 +58,7 @@ html {
   }
 }
 
+/* SVG ONLY */
 @media all and (min-width: 400px) {
   #chart svg {
     transform: scale(0.9);
@@ -105,8 +108,8 @@ h1 {
 
 span {
     font-family: Playfair Display, serif;
-    font-size: 45px;
-    color: #6f6f6f
+    font-size: 30px;
+    color: #6f6f6f;
 }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
@@ -118,7 +121,31 @@ a {
   color: #ed6464;
 }
 
-#top:before, #portfolio span:before, #aboutMe:before, #timeline:before  {
+#top:before {
+ border-top: 2px solid rgb(255, 27, 27);
+ content:""; /*enables a blank line*/
+ margin: 0; /* this centers the line to the full width specified */
+ position: absolute; /* positioning must be absolute here, and relative positioning must be applied to the parent */
+ /*originally left 5%*/
+ top: 40px; left: 0%; right: 0; bottom: 0;
+ width: 45px;
+ z-index: 1;
+}
+
+
+#portfolio span:before {
+ border-top: 2px solid rgb(255, 27, 27);
+ content:""; /*enables a blank line*/
+ margin: 0; /* this centers the line to the full width specified */
+ position: absolute; /* positioning must be absolute here, and relative positioning must be applied to the parent */
+ /*originally left 5%*/
+ top: 20px; left: 0%; right: 0; bottom: 0;
+ width: 45px;
+ z-index: 1;
+}
+
+
+#aboutMe>div>span:before, #timeline:before  {
  border-top: 2px solid rgb(255, 27, 27);
  content:""; /*enables a blank line*/
  margin: 0; /* this centers the line to the full width specified */
@@ -126,20 +153,31 @@ a {
  /*originally left 5%*/
  top: 50px; left: 0%; right: 0; bottom: 0;
  width: 50px;
- z-index: -1;
+ z-index: 1;
 }
 
-#top, #portfolio, #aboutMe, #timeline {
+#top, #portfolio, #aboutMe>div, #timeline {
   position: relative;
 }
 
 
-#top h1, #portfolio span {
+#top h1, #portfolio span, #aboutMe span, #timeline span {
   margin-left: 50px;
 }
 
 .shot {
   width:100%;
+}
+
+.shots {
+  padding: 0;
+  margin: 0;
+}
+
+.shots li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 @media all and (min-width: 600px) {
