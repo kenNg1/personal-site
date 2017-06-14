@@ -27,7 +27,7 @@ h: h*.55,
 radius: 4,
 maxValue: 5,
 levels: 10,
-ExtraWidthX: 300
+ExtraWidthX: 150,
 }
 
 //Call function to draw the Radar chart
