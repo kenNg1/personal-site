@@ -144,35 +144,35 @@ var RadarChart = {
     .attr("xlink:href", "images/icons/ruby.png")
     .attr("text-anchor", "middle")
     .attr("transform", "translate(272,-15)")
-    // .attr("width", "100px")
+    .attr("width", "30px")
     .attr("height", "30px");
 
   axis.append("image")
     .attr("xlink:href", "images/icons/postgres.png")
     .attr("text-anchor", "middle")
     .attr("transform", "translate(300,65)")
-    // .attr("width", "100px")
+    .attr("width", "40px")
     .attr("height", "40px");
 
   axis.append("image")
     .attr("xlink:href", "images/icons/firebase.png")
     .attr("text-anchor", "middle")
     .attr("transform", "translate(290,170)")
-    // .attr("width", "100px")
+    .attr("width", "40px")
     .attr("height", "40px");
 
   axis.append("image")
     .attr("xlink:href", "images/icons/python.png")
     .attr("text-anchor", "middle")
     .attr("transform", "translate(190,250)")
-    // .attr("width", "50px")
+    .attr("width", "30px")
     .attr("height", "30px");
 
   axis.append("image")
     .attr("xlink:href", "images/icons/angular.png")
     .attr("text-anchor", "middle")
     .attr("transform", "translate(20,243)")
-    // .attr("width", "55px")
+    .attr("width", "55px")
     .attr("height", "55px");
 
 
