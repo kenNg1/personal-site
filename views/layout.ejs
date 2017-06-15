@@ -9,7 +9,6 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/flexboxgrid.css">
     <link rel="stylesheet" href="/css/custom.css">
-    <link rel="stylesheet" type="text/css" href="/css/slimmenu.min.css">
   </head>
   <body>
 
@@ -20,7 +19,7 @@
       // };
     </script>
     <% include ./partials/navbar %>
-
+    
     <%- body -%>
 
     <% include ./partials/footer %>
@@ -32,21 +31,6 @@
     <script src="js/RadarChart.js"></script>
     <script type="text/javascript" src="js/jquery.min.js"></script>
 
-    <!-- slim menu -->
-    <script type="text/javascript" src="js/jquery.slimmenu.min.js"></script>
-
-    <!-- script for slim menu -->
-    <script>
-      $('#navigation').slimmenu(
-        {
-        resizeWidth: '800',
-        collapserTitle: 'Main Menu',
-        animSpeed: 'medium',
-        easingEffect: null,
-        indentChildren: false,
-        childrenIndenter: '&nbsp;'
-      });
-    </script>
     <% include ./partials/javascriptOnly %>
 
   </body>

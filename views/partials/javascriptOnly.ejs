@@ -3,3 +3,19 @@
 <script src="js/chartdata.js"></script>
 
 <script src="js/animatedline.js"></script>
+
+<script>
+$('.toggle').click(function () {
+    "use strict";
+    $('nav ul').slideToggle();
+    $("#spacer").toggle();
+});
+
+$(window).resize(function () {
+    "use strict";
+    if ($(window).width() > 780) {
+        $('nav ul').removeAttr('style');
+    }
+});
+
+</script>
